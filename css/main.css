@@ -105,17 +105,13 @@ header .content-wrapper {
   display: flex;
   align-items:center;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
-/* ??? :
-header a .logo {
-  width: 100%;
-} */
-
 header nav ul{
+  display:flex;
   justify-content: space-around;
   list-style: none;
- /* width: 100%; */
 }
 
 header nav ul li a{
@@ -123,56 +119,79 @@ header nav ul li a{
 }
 
 footer .social-icons {
- flex-wrap: wrap;
-}
-
-footer social p {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
-/* ==== main styles ==== */
+footer .social-icons p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==== mobile styles ==== */
+
+/* Hero image part */
 
 .hero {
   display: flex;
   justify-content:  center;
-  align-items: center;
 }
+
+/* Aside part */
 
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.features .content-wrapper{
+/* features part */
+
+.features {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
 .features .features-items {
-  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
+
+/* review part */
 
 .reviews {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+/* end: Homepage code */
 
-.mission {
+/* == = for about page = == */
 
+.mission{
+  display: flex;
+  justify-content: center;
 }
 
 .contact-section {
-
+  display: flex;
+  justify-content: center;
 }
 
-faq {
+/* == = for FAQ page = == */
 
+.answers {
+  display: flex;
+  justify-content: center;
 }
 
-faq .content-wrapper {
-
+.answers .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 /* ==========================================================================
