@@ -87,11 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
    
+.content-wrapper {
+  border: darkmagenta, dotted, 2px;
+  width: 90%;
+  /*display: flex;*/
+  margin: 50px 0;
+}
+
 /* ===== Base Header - Footer styles ==== */
 
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 footer {
@@ -106,17 +114,48 @@ header .content-wrapper {
   align-items:center;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 0;
+ /* width: 60%; */
+}
+
+footer .content-wrapper{
+  width: 55%;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+} 
+
+footer p {
+  margin: 0;
+}
+
+/*address p {
+  padding-bottom: 50px;
+}
+
+.contact h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}*/
+
+header nav {
+  width: 60%;
 }
 
 header nav ul{
   display:flex;
   justify-content: space-around;
   list-style: none;
+  width: 100%;
 }
 
-header nav ul li a{
+/*header nav ul li a{
   text-decoration: none;
-}
+  margin: 0;
+} */
 
 footer .social-icons {
   display: flex;
@@ -124,10 +163,23 @@ footer .social-icons {
   justify-content: space-around;
 }
 
+footer .contact {
+  margin-bottom: 50px;
+}
+
 footer .social-icons p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /* ==== mobile styles ==== */
@@ -150,7 +202,22 @@ aside {
 
 .features {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.features h2{
+  margin-bottom: 60px;
+  margin: 60px;
+}
+
+.features article{
+  margin: 30px 0;
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p{
+  margin: 0;
 }
 
 .features .features-items {
@@ -164,8 +231,18 @@ aside {
 
 .reviews {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
 /* end: Homepage code */
 
 /* == = for about page = == */
@@ -180,6 +257,10 @@ aside {
   justify-content: center;
 }
 
+.contact-content {
+  margin: 0;
+}
+
 /* == = for FAQ page = == */
 
 .answers {
@@ -192,6 +273,15 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.answers h2 {
+  margin-bottom: 40px;
+}
+
+.answers-content {
+  margin-bottom: 50px;;
 }
 
 /* ==========================================================================
@@ -367,4 +457,3 @@ aside {
     page-break-after: avoid;
   }
 }
-
